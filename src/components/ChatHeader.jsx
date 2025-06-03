@@ -1,41 +1,38 @@
-import ProtectedImage from "@/components/ProtectedImage";
 import { Icon } from "@iconify/react";
 
 const ChatHeader = () => (
-  <div className="pt-32 px-5 pb-5 bg-none animate-fade-in">
-    <div className="flex items-center gap-3">
-      <Icon
-        icon="carbon:robot"
-        width="32"
-        height="32"
-        className="text-white/90"
-      />
-      <p className="text-5xl font-bold text-white text-center tracking-wide">
-        SulTenZ_AI
-      </p>
-    </div>
+  <header className="pt-24 px-6 pb-6 bg-gradient-to-b from-[#000080]/70 to-transparent animate-fade-in">
+    <div className="max-w-3xl mx-auto flex flex-col items-center">
+      <div className="flex items-center gap-4">
+        <Icon
+          icon="mdi:brain"
+          width={40}
+          height={40}
+          className="text-white/90"
+          aria-label="Brain Icon"
+        />
+        <h1 className="text-6xl font-extrabold text-white tracking-tight select-none">
+          SulTenZ AI
+        </h1>
+      </div>
 
-    <div className="flex items-center gap-2 mt-2 text-white/75 text-xl font-light">
-      <Icon icon="mdi:github" width="20" height="20" />
-      <a
-        href="https://github.com/yogawan/jawiraiv1.6.3"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline hover:text-white transition"
-      >
-        Open Source
-      </a>
-      <span className="mx-1 text-white/50">|</span>
-      <Icon
-        icon="material-symbols:smart-toy-outline-rounded"
-        width="20"
-        height="20"
-      />
-      <span className="italic text-white">
-        User Interface to interact with AI Model
-      </span>
+      <p className="mt-2 text-lg text-white/70 italic text-center max-w-md">
+        Boost your productivity with a smart and responsive AI assistant
+      </p>
+
+      <nav className="mt-5 flex items-center gap-4 text-white/70 text-sm font-medium select-none">
+        <Icon icon="mdi:github" width={20} height={20} aria-hidden="true" />
+        <a
+          href="https://github.com/username/prodai-assistant"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-white transition-colors"
+        >
+          Visit our GitHub
+        </a>
+      </nav>
     </div>
-  </div>
+  </header>
 );
 
 export default ChatHeader;
