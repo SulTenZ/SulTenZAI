@@ -29,8 +29,9 @@ const ChatHeader = () => (
         width="20"
         height="20"
       />
-      <span className="italic text-white">User Interface</span> to interact with
-      AI Model
+      <span className="italic text-white">
+        User Interface to interact with AI Model
+      </span>
     </div>
   </div>
 );
