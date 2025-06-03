@@ -10,7 +10,9 @@ const ChatHeader = () => (
         height="32"
         className="text-white/90"
       />
-      <p className="text-3xl font-thin text-white tracking-wide">SulTenZAI</p>
+      <p className="text-5xl font-bold text-white text-center tracking-wide">
+        SulTenZ_AI
+      </p>
     </div>
 
     <div className="flex items-center gap-2 mt-2 text-white/75 text-xl font-light">
