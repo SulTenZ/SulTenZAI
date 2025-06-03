@@ -1,20 +1,37 @@
 import ProtectedImage from "@/components/ProtectedImage";
+import { Icon } from "@iconify/react";
 
 const ChatHeader = () => (
-  <div className="pl-5 pr-5 pb-5 bg-none">
-    {/* <ProtectedImage
-      src="/brand/logo.png"
-      alt="logo"
-      className="h-16 mb-3"
-    /> */}
-    <p className="text-3xl font-thin text-white">SulTenZAI</p>
-    <p className="text-xl font-thin text-white/75">
-      <u>
-        <a href="https://github.com/yogawan/jawiraiv1.6.3">Open Source</a>
-      </u>
-      <i className="text-white">User Interface</i>
-      to interact with AI Model
-    </p>
+  <div className="pt-32 px-5 pb-5 bg-none animate-fade-in">
+    <div className="flex items-center gap-3">
+      <Icon
+        icon="carbon:robot"
+        width="32"
+        height="32"
+        className="text-white/90"
+      />
+      <p className="text-3xl font-thin text-white tracking-wide">SulTenZAI</p>
+    </div>
+
+    <div className="flex items-center gap-2 mt-2 text-white/75 text-xl font-light">
+      <Icon icon="mdi:github" width="20" height="20" />
+      <a
+        href="https://github.com/yogawan/jawiraiv1.6.3"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-white transition"
+      >
+        Open Source
+      </a>
+      <span className="mx-1 text-white/50">|</span>
+      <Icon
+        icon="material-symbols:smart-toy-outline-rounded"
+        width="20"
+        height="20"
+      />
+      <span className="italic text-white">User Interface</span> to interact with
+      AI Model
+    </div>
   </div>
 );
 
