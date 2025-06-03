@@ -65,7 +65,7 @@ const ChatAI = () => {
   };
 
   return (
-    <div className="bg-[url('/assets/deepseek.png')] bg-center flex justify-center pt-32">
+    <div className="bg-[url('/assets/deepseek.png')] bg-center flex justify-center">
       <Head>
         <title></title>
       </Head>
