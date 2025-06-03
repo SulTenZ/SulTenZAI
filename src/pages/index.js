@@ -4,7 +4,7 @@ import ChatHeader from "@/components/ChatHeader";
 import ChatForm from "@/components/ChatForm";
 import ChatHistory from "@/components/ChatHistory";
 import ChatFloating from "@/components/ChatFloating";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Head from "next/head";
 
 const ChatAI = () => {
@@ -67,14 +67,10 @@ const ChatAI = () => {
   return (
     <div
       className="bg-center flex justify-center min-h-screen"
-      style={{ background: "linear-gradient(to bottom, #000080, #000000)" }}
+      style={{ background: "linear-gradient(to bottom, #000015, #000000)" }}
     >
-      <Head>
-        <title>SulTenZ_AI</title>
-      </Head>
       <div className="w-full sm:w-[720px]">
         <div className="flex flex-col min-h-screen">
-          {/* <Navbar /> */}
           {!hasHistory && (
             <div>
               <ChatHeader />
