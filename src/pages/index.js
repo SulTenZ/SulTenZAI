@@ -65,15 +65,19 @@ const ChatAI = () => {
   };
 
   return (
-    <div className="bg-[url('/assets/deepseek.png')] bg-center flex justify-center">
+    <div
+      className="min-h-screen bg-cover bg-center flex justify-center items-start"
+      style={{ backgroundImage: "url('/assets/deepseek.png')" }}
+    >
       <Head>
-        <title></title>
+        <title>Chat AI</title>
       </Head>
-      <div className="w-full sm:w-[720px]">
-        <div className="flex flex-col min-h-screen">
+
+      <div className="w-full sm:w-[720px] bg-white bg-opacity-90 rounded-md shadow-md m-4">
+        <div className="flex flex-col min-h-screen p-4">
           {/* <Navbar /> */}
           {!hasHistory && (
-            <div>
+            <>
               <ChatHeader />
               <ChatForm
                 input={input}
@@ -81,7 +85,7 @@ const ChatAI = () => {
                 handleSend={handleSend}
                 isLoading={isLoading}
               />
-            </div>
+            </>
           )}
           {hasHistory && (
             <ChatFloating
