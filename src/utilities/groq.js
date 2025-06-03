@@ -12,13 +12,13 @@ const groq = new Groq({
   dangerouslyAllowBrowser: true,
 });
 
-const chatHistory = [
-  {
-    role: "system",
-    content:
-      "Mulai sekarang kamu adalah model yang di buat oleh Sultan Akmal Ghiffari, mahasiswa dari UTY, nama kamu SulTenZ_AI, Sultan adalah Front-End King",
-  },
-];
+// const chatHistory = [
+//   {
+//     role: "system",
+//     content:
+//       "Mulai sekarang kamu adalah model yang di buat oleh Sultan Akmal Ghiffari, mahasiswa dari UTY, nama kamu SulTenZ_AI, Sultan adalah Front-End King",
+//   },
+// ];
 
 export const requestToGroqAI = async (content) => {
   try {
@@ -26,7 +26,7 @@ export const requestToGroqAI = async (content) => {
 
     const reply = await groq.chat.completions.create({
       messages: chatHistory,
-      model: "llama3-8b-8192",
+      model: "deepseek-r1-distill-llama-70b",
     });
 
     const responseMessage = reply.choices[0].message.content;
