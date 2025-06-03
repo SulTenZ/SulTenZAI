@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 
 const ChatHeader = () => (
-  <header className="pt-24 px-6 pb-6 bg-gradient-to-b from-[#000080]/70 to-transparent animate-fade-in">
+  <header className="pt-24 px-6 bg-transparent animate-fade-in">
     <div className="max-w-3xl mx-auto flex flex-col items-center">
       <div className="flex items-center gap-4">
         <Icon
